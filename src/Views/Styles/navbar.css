@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Reddit Sans Condensed', sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  font-size: 45px;
+  z-index: 1000;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.navbar-toggle {
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.navbar-menu {
+  display: none;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro cuando se despliega */
+  padding: 20px;
+  position: absolute;
+  top: 60px; /* Ajusta según sea necesario */
+  right: 0;
+  width: 100%;
+}
+
+.navbar-menu.active {
+  display: flex;
+  right: 0;
+}
+
+.navbar a {
+  color: #fff;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-family: 'Reddit Sans Condensed', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 8px;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid #fff; /* Línea debajo de cada palabra al pasar el ratón */
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent; /* Sin fondo en vista de escritorio */
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .navbar-menu {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent; /* Sin fondo en vista de escritorio */
+    position: static;
+    padding: 0;
+    width: auto;
+  }
+
+  .navbar a {
+    margin-right: 50px; /* Aumenta el espacio entre las palabras */
+    margin-bottom: 0;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navbar-menu {
+    width: 100%;
+    text-align: right;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar a {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
