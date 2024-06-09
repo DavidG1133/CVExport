@@ -79,17 +79,19 @@ Enfoque en la Calidad:
 ## IMPLEMENTACIÓN DE SCRUM EN EL PROYECTO
 ![image](https://github.com/DavidG1133/CVExport/assets/171756156/6d227145-61c0-47f4-9903-55b7f461f448)
 
-## Plan de Desarrollo Basado en Metodología ÁgilFases del Proyecto
+## Plan de Desarrollo Basado en Metodología Ágil del Proyecto
 1. Planificación y Análisis (Sprint 0)
 Definición de objetivos y alcance del proyecto.
 Identificación de stakeholders.
 Creación del backlog del producto.
 Definición de las historias de usuario.
 Planificación de los sprints iniciales.
+
 2. Diseño y Arquitectura (Sprint 1)
 Diseño de la arquitectura del sistema.
 Diseño de la base de datos.
 Diseño de la interfaz de usuario (mockups y wireframes).
+
 Definición de las integraciones con WhatsApp y servicios de correo electrónico.
 3. Desarrollo de Funcionalidades Básicas (Sprint 2-4)
 - Sprint 2
@@ -101,14 +103,16 @@ Implementación de la funcionalidad de previsualización en tiempo real.
 - Sprint 4
 Integración de las plantillas de CV.
 Pruebas y ajustes en el editor y previsualización.
+
 4. Exportación y Compartición (Sprint 5-6)
 - Sprint 5
 Implementación de la exportación en formato Word y PDF.
 Pruebas de exportación y ajustes.
+Pruebas de direccionamiento
 - Sprint 6
 Integración con WhatsApp para el envío de CVs.
 Integración con servicios de correo electrónico para el envío de CVs.
-Implementación de la funcionalidad de compartir en LinkedIn.
+Implementación de la funcionalidad de direccionar en LinkedIn.
 5. Gestión de CVs y Versionado (Sprint 7)
 Implementación de la funcionalidad para guardar múltiples CVs.
 Desarrollo del historial de versiones.
@@ -126,13 +130,13 @@ Feedback de los usuarios y planificación de mejoras futuras.
 
 # Cronograma Estimado
 
-- Sprint 0: 1 semana
-- Sprint 1: 1 semana
-- Sprint 2-4: 3 semanas (1 semana por sprint)
-- Sprint 5-6: 2 semanas (1 semana por sprint)
-- Sprint 7: 1 semana
-- Sprint 8-9: 2 semanas (1 semana por sprint)
-- Sprint 10: 1 semana
+  - Sprint 0: 1 semana
+  - Sprint 1: 1 semana
+  - Sprint 2-4: 3 semanas 
+  - Sprint 5-6: 2 semanas 
+  - Sprint 7: 1 semana
+  - Sprint 8-9: 2 semanas 
+  - Sprint 10: 1 semana
 
 Total: 8 semanas
 
