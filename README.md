@@ -141,11 +141,11 @@ Feedback de los usuarios y planificación de mejoras futuras.
 Total: 8 semanas
 
 # ARQUITECTURA APLICADA Y PATRÓN DE DISEÑO
-## MVC
-Elegimos la arquitectura MVVC para el proyecto de creación de CVs debido a que  proporciona una estructura clara y modular que facilita el desarrollo, mantenimiento y escalabilidad del sistema. La separación de responsabilidades nos permite enfocarnos en áreas específicas sin afectar otros componentes, lo que nos resulta en un producto final de alta calidad y fácilmente adaptable a futuras necesidades y cambios en el mercado.
+## MVVM
+La arquitectura MVVM es una excelente opción para el desarrollo del proyecto de creación de CVs debido a su capacidad para manejar la complejidad de la lógica de presentación, su modularidad, y la separación de responsabilidades. Esto resulta en un código más limpio, mantenible y escalable, lo que es crucial para el éxito a largo plazo del proyecto. Además, MVVM facilita la implementación de funcionalidades complejas y actualizaciones en tiempo real.
 
 # Integrantes del Equipo
 - Daniela Alvarado Luna 
 - Manuel Castillo Pisil
 - David Gonzalez Amaro
-# Desarrollo WEB Integral 9°A
+# Materia: Desarrollo WEB Integral 9°A
