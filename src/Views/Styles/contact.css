@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200&display=swap');
+
+.container1 {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1px;
+}
+
+.card-header1 {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: large;
+    font-family: 'Reddit Sans Condensed', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    padding: 1px;
+    text-align: right;
+    width: 60%;
+    margin-left: auto;
+    margin-right: 0;
+    line-height: 1.5;
+}
+
+.contact-form-container {
+    width: 80%;
+    display: flex;
+    justify-content: right; 
+}
+
+.contact-form {
+    width: 50%;
+    background-color: transparent;
+    padding: 1px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px 0px rgba(5, 4, 8, 0.1);
+}
+
+.input-field {
+    width: 100%;
+    padding: 20px;
+    background: #DDDDDD;
+    color: #000000;
+    margin-bottom: 2px; 
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: none;
+}
+
+.icon-container,
+.icon-container1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column; 
+    text-align: center; 
+}
+
+.icon-container {
+    top: calc(100% + 10px); 
+}
+
+.icon-container1 {
+    top: calc(100% + 40px);
+}
+
+.icon {
+    font-size: 6.5em; 
+    margin-right: 0; 
+    margin-bottom: 10px; 
+}
+
+.text-container {
+    position:relative;
+    top:-80px;
+    left:110px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Reddit Sans Condensed', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.text-container span {
+    font-size: 1.3em; 
+    margin-left: 0; 
+    display: block; 
+}
+
+@media (min-width: 768px) {
+    .icon-container,
+    .icon-container1 {
+        position: absolute;
+        left: 300px; 
+        top: 50%; 
+        transform: translateY(-60%); 
+        flex-direction: row; 
+        text-align: left; 
+    }
+
+    .icon-container1 {
+        top: 80%; 
+    }
+
+    .icon {
+        font-size: 6.5em; 
+        margin-right: 20px; 
+    }
+
+    .text-container {
+        margin-left: 20px; 
+    }
+
+    .text-container span {
+        display: inline; 
+    }
+}
+
+@media (max-width: 768px) {
+    .container1 {
+        padding: 20px; /* Ajuste del padding para separar los elementos del borde */
+    }
+
+    .card-header1 {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+        margin: 0; /* Elimina los márgenes para que el texto sea visible */
+        text-align: center; /* Centra el texto */
+    }
+
+    .contact-form-container {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+        justify-content: center; /* Centra el formulario */
+    }
+
+    .contact-form {
+        width: 80%; /* Reducir el ancho del formulario */
+    }
+
+    .input-field {
+        width: 100%; /* Ancho completo de los campos de entrada */
+        margin-bottom: 10px; /* Espaciado inferior entre campos de entrada */
+    }
+
+    .icon-container,
+    .icon-container1 {
+        display: none; /* Oculta los iconos en pantallas pequeñas */
+    }
+
+    .submit-button {
+        width: 100%; /* Ancho completo del botón */
+        margin-top: 20px; /* Espaciado superior */
+    }
+
+    .text-container {
+        position: static; /* Cambia la posición a estática */
+        margin-top: 20px; /* Espaciado superior */
+        text-align: center; /* Centra el texto */
+    }
+
+    .text-container span {
+        display: block; /* Hace que el texto se apile verticalmente */
+    }
+}
+
+.submit-button {
+    width: 30%;
+    padding: 10px;
+    background-color: yellow;
+    color: #333;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}

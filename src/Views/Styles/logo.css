@@ -1,0 +1,7 @@
+/* src/components/Logo.css */
+@media screen and (max-width: 768px) {
+    .logo-image {
+      display: none;
+    }
+  }
+  
