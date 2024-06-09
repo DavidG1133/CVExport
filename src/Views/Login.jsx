@@ -2,9 +2,10 @@ import React from 'react';
 import Imagen from '../Components/Imagen';
 import NavBar from '../Components/NavBar';
 import AppHeader from '../Components/AppHeader';
-import '../Styles/login.css'
+import '../Views/Styles/login.css'
+import { Link } from 'react-router-dom'
 
-const Registro = () => {
+const Login = () => {
   return (
     <>
       <AppHeader />
@@ -35,4 +36,4 @@ const Registro = () => {
   );
 }
 
-export default Registro;
+export default Login;
