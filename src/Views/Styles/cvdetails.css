@@ -1,0 +1,62 @@
+.cv-details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.cv-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+}
+
+.cv-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cv-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.cv-form input, .cv-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.cv-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.cv-template-container {
+    width: 55%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .cv-details-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cv-form, .cv-template-container {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}

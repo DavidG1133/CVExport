@@ -1,0 +1,67 @@
+.div-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #5FCB9F;
+    min-height: 100vh;
+    text-align:center;
+}
+
+.boton{
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding:100px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: "Reddit Sans Condensed", sans-serif;
+    background-color: #cdd40d; /* Este es el color de fondo del botón .btn */
+    cursor: pointer;
+    transition: border-color 0.25s;
+    color: #333;
+    padding: 10px 20px; /* Ajuste adicional para la clase .btn */
+    border-radius: 45px; /* Ajuste adicional para la clase .btn */
+    background-color: #cdd40d;
+}
+
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+.card2 {
+    width: 300px;
+    margin-left: -500px; /* Alineación a la izquierda */
+    margin-top: 150px; /* Margen superior */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body2 {
+    padding: 20px;
+}
+
+.card-title2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text2{
+    font-size: 1rem;
+    color: #555;
+}

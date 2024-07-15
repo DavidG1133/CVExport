@@ -1,0 +1,26 @@
+.navbar {
+  background-color: #4BA781; /* Color de fondo azul verdoso */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px; 
+  
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons a {
+  margin-right: 40px; /* Separación entre los íconos */
+}
+
+.icons a:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último ícono */
+}
+
+.icons .fa-icon {
+  font-size: 80px; /* Tamaño de los íconos */
+  color: white; 
+}
