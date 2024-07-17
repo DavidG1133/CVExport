@@ -2,7 +2,7 @@ import React from 'react';
 import Imagen from '../Components/Imagen';
 import NavBar from '../Components/NavBar';
 import AppHeader from '../Components/AppHeader';
-import '../Styles/login.css'
+import '../Views/Styles/login.css'
 
 const Registro = () => {
   return (
@@ -17,7 +17,7 @@ const Registro = () => {
               <h2>Login</h2>
               <input type="text" placeholder="Username" required />
               <input type="password" placeholder="Password" required />
-              <button className="btn-custom">
+              <button className="btn-custom1">
                 <span></span>
                 <span></span>
                 <span></span>

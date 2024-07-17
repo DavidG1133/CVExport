@@ -10,7 +10,7 @@
 }
 
 .card-header1 {
-    margin-top: 70px;
+    margin-top: 160px;
     margin-bottom: 20px;
     font-size: large;
     font-family: 'Reddit Sans Condensed', sans-serif;
@@ -22,6 +22,7 @@
     margin-left: auto;
     margin-right: 0;
     line-height: 1.5;
+    color:white;
 }
 
 .contact-form-container {
@@ -62,6 +63,7 @@
     display: flex;
     flex-direction: column; 
     text-align: center; 
+    color:white;
 }
 
 .icon-container {
@@ -93,6 +95,10 @@
     font-size: 1.3em; 
     margin-left: 0; 
     display: block; 
+}
+
+.lb{
+    color:white;
 }
 
 @media (min-width: 768px) {

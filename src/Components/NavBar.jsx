@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../Styles/navbar.css';
+import '../Views/Styles/navbar.css';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
@@ -10,7 +10,7 @@ const NavBar = () => {
     };
 
     return (
-        <nav className='navbar'>
+        <nav className='navbar1'>
             <div className='navbar-toggle' onClick={toggleMenu}>
                 &#9776;
             </div>

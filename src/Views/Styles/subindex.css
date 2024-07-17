@@ -1,4 +1,4 @@
-.subindex-container {
+.subindex-container1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,28 +9,76 @@
     text-align: center;
 }
 
-.subindex-container h1 {
+.subindex-container1 h1 {
+    margin-bottom: 20px; 
+}
+
+.cv-templates1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.subindex-container1 h1 {
     margin-bottom: 20px; 
     text-align:center;
 }
 
 .text{
     text-align:center;
+    font-size:22px;
 }
-
-.cv-templates {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 20px;
-}
-
-.cv-template {
-    background-color: #E8ECEB;
-    padding: 20px;
-    border-radius: 10px;
+.cv-template1 {
+    background-color: #fff;
+    padding: 8.3px;
+    border-radius: 10px; /* Bordes más pequeños para el contenedor interno */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 270px;
     text-align: left;
+    height: 100%; /* Asegura que el contenido llene el contenedor */
+    overflow: hidden; /* Oculta el contenido desbordado */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cv-template1 h2, .cv-template1 p {
+    margin: 5px 0; /* Ajusta el margen de los textos */
+    font-size: 15px; /* Tamaño de fuente más pequeño */
+    word-wrap: break-word; /* Asegura que las palabras largas se ajusten */
+    color:black;
+}
+
+.cv-container1:hover {
+    transform: translateY(-5px); /* Mover ligeramente hacia arriba en hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en hover */
+}
+
+.cv-template1:hover {
+    transform: scale(1.05); /* Escala en hover */
+}
+
+.cv-container1 a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 95%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cv-container1 {
+    animation: fadeIn 0.5s ease-in-out;
+
 }

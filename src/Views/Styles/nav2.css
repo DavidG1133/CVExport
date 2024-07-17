@@ -1,26 +1,25 @@
-.navbar {
-  background-color: #4BA781; /* Color de fondo azul verdoso */
+.navbar2 {
+  background-color: #4AAD90; /* Color de fondo azul verdoso */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 30px; 
-  
+  justify-content: space-between; /* Alinea los elementos a los extremos */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 30px 20px; /* Ajusta el padding según sea necesario */
 }
 
 .icons {
-  display: flex;
-  align-items: center;
+  display: flex; /* Alinea los íconos en línea */
+  align-items: center; /* Centra verticalmente los íconos */
+}
+
+.container-fluid {
+  margin-left: auto; /* Empuja los íconos a la derecha */
 }
 
 .icons a {
-  margin-right: 40px; /* Separación entre los íconos */
-}
-
-.icons a:last-child {
-  margin-right: 0; /* Elimina el margen derecho del último ícono */
+  margin-left: 40px; /* Espacio entre los íconos */
+  color: white; /* Color blanco para los íconos */
 }
 
 .icons .fa-icon {
-  font-size: 80px; /* Tamaño de los íconos */
-  color: white; 
+  font-size: 60px; /* Tamaño de los íconos aumentado */
 }

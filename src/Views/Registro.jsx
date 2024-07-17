@@ -2,7 +2,7 @@ import React from 'react';
 import AppHeader from '../Components/AppHeader';
 import NavBar from '../Components/NavBar';
 import Imagen from '../Components/Imagen';
-import '../Styles/registro.css'
+import '../Views/Styles/registro.css'
 
 const Registro = () => {
   return (

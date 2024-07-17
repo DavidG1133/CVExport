@@ -1,7 +1,7 @@
 // src/components/Logo.jsx
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../Styles/logo.css'; // Importa el archivo CSS
+import '../Views/Styles/logo.css'; // Importa el archivo CSS
 
 const Logo = ({ src, alt, position }) => {
   const logoStyle = {
