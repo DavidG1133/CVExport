@@ -19,7 +19,7 @@ const Registro = () => {
               <input type="text" placeholder="Username *" required />
               <input type="email" placeholder="Email *" required />
               <input type="password" placeholder="Password *" required />
-              <a className="btn3" href="#">
+              <a className="btn3" href="Login">
                 <span></span>
                 <span></span>
                 <span></span>

@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import '../Views/Styles/historial.css';
 
 const History = () => {
-    // Suponiendo que tienes una lista de historial de CVs
+
     const cvHistories = [
         { id: 1, name: 'CV de Juan', description: 'Última actualización: 01/07/2024' },
         { id: 2, name: 'CV de María', description: 'Última actualización: 15/06/2024' },
-        // Agrega más elementos según sea necesario
+        
     ];
 
     return (
