@@ -179,9 +179,14 @@ Total: 8 semanas
 ## MVVM
 La arquitectura MVVM es una excelente opción para el desarrollo del proyecto de creación de CVs debido a su capacidad para manejar la complejidad de la lógica de presentación, su modularidad, y la separación de responsabilidades. Esto resulta en un código más limpio, mantenible y escalable, lo que es crucial para el éxito a largo plazo del proyecto. Además, MVVM facilita la implementación de funcionalidades complejas y actualizaciones en tiempo real.
 
-#Pruebas unitarias 
+# Pruebas unitarias
+## Loggin
 ![image](https://github.com/user-attachments/assets/f6e1f58a-0987-4260-9bb6-e0ee96c9c09f)
+## Registro 
+![Untitled](https://github.com/user-attachments/assets/57f19d27-e769-45fe-ad14-82d7083c6924)
 
+#Prueba componente
+![Untitled-1](https://github.com/user-attachments/assets/412cf848-6b5a-40a3-97da-00a5ec63488e)
 
 
 # Integrantes del Equipo
