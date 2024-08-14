@@ -185,7 +185,7 @@ La arquitectura MVVM es una excelente opción para el desarrollo del proyecto de
 ## Registro 
 ![Untitled](https://github.com/user-attachments/assets/57f19d27-e769-45fe-ad14-82d7083c6924)
 
-#Prueba componente
+# Prueba componente
 ![Untitled-1](https://github.com/user-attachments/assets/412cf848-6b5a-40a3-97da-00a5ec63488e)
 
 
