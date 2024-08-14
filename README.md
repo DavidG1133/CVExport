@@ -55,24 +55,24 @@ GESTIÓN DE CVS
 
 #Instalaciones de librerias 
 
-npm install @fortawesome/fontawesome-free@6.6.0
-npm install @fortawesome/free-solid-svg-icons@6.6.0
-npm install @fortawesome/react-fontawesome@0.2.2
-npm install @react-pdf/renderer@3.4.4
-npm install file-saver@2.0.5
-npm install iframe@1.0.0
-npm install jspdf@2.5.1
-npm install jspdf-autotable@3.8.2
-npm install pdf-lib@1.17.1
-npm install pdfjs@2.5.3
-npm install react-iframe@1.8.5
-npm install react-pdf@9.1.0
-npm install react-pdf-editor@1.1.2
-npm install sweetalert2@11.12.2
-npm install --save-dev @testing-library/react@16.0.0
-npm install --save-dev eslint-plugin-react@7.34.1
-npm install --save-dev eslint-plugin-react-hooks@4.6.0
-npm install --save-dev jest-fetch-mock@3.0.3
+- npm install @fortawesome/fontawesome-free@6.6.0
+- npm install @fortawesome/free-solid-svg-icons@6.6.0
+- npm install @fortawesome/react-fontawesome@0.2.2
+- npm install @react-pdf/renderer@3.4.4
+- npm install file-saver@2.0.5
+- npm install iframe@1.0.0
+- npm install jspdf@2.5.1
+- npm install jspdf-autotable@3.8.2
+- npm install pdf-lib@1.17.1
+- npm install pdfjs@2.5.3
+- npm install react-iframe@1.8.5
+- npm install react-pdf@9.1.0
+- npm install react-pdf-editor@1.1.2
+- npm install sweetalert2@11.12.2
+- npm install --save-dev @testing-library/react@16.0.0
+- npm install --save-dev eslint-plugin-react@7.34.1
+- npm install --save-dev eslint-plugin-react-hooks@4.6.0
+- npm install --save-dev jest-fetch-mock@3.0.3
 
 #Base de datos 
 
