@@ -4,8 +4,8 @@ import Index from '../Views/Index';
 import Login from '../Views/Login';
 import Registro from '../Views/Registro';
 import SubIndex from '../Views/SubIndex';
-import History from '../Views/History';
 import Cvdetails from '../Views/Cvdetails';
+
 
 const MainRoutes = () => {
     return (
@@ -15,7 +15,6 @@ const MainRoutes = () => {
                 <Route path='/Login' element={<Login />} />
                 <Route path='/Registro' element={<Registro />} />
                 <Route path='/SubIndex' element={<SubIndex />} />
-                <Route path='/History' element={<History />} />
                 <Route path='/cv-details/:id' element={<Cvdetails />} />
             </Routes>
       
