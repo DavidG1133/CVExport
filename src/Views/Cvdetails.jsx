@@ -1,41 +1,3 @@
-<<<<<<< HEAD
-import React, { useState } from 'react';
-import Nav2 from '../Components/Nav2';
-import { Link, useParams } from 'react-router-dom';
-import '../Views/Styles/cvdetails.css';
-import jsPDF from 'jspdf';
-
-const Cvdetails = () => {
-    const {id} = useParams()
-    const [cvData, setCvData] = useState({
-        nombre: '',
-        experienciaLaboral: '',
-        estudios: '',
-        habilidades: '',
-        idiomas: '',
-        sobreMi: '',
-        contacto: '',
-        herramientas: '',
-        correo: '',
-        direccion: '',
-        foto: null,
-    });
-
-    const handleInputChange = (event) => {
-        const { name, value } = event.target;
-        if (name === 'foto') {
-            setCvData((prevData) => ({ ...prevData, foto: event.target.files[0] }));
-        } else {
-            setCvData((prevData) => ({ ...prevData, [name]: value }));
-        }
-    };
-
-    const colors ={
-        1:[200,205,207],
-        2:[219,223,224],
-        3:[247,11,239],
-        4:[247,148,148]
-=======
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import CvTemplate from '../Components/CvTemplate';
@@ -119,7 +81,6 @@ const Cvdetails = () => {
 
     if (!cvData) {
         return <div>Loading...</div>;
->>>>>>> 046c207eff653c7c9795c50573922c04314fcbf3
     }
 
     const generatePdf = () => {
@@ -187,125 +148,6 @@ const Cvdetails = () => {
     return (
         <>
             <Nav2 />
-<<<<<<< HEAD
-            <div className="cv-details">
-                <h1>Detalles del CV</h1>
-                <form>
-                    
-                    <div>
-                        <label>Foto:</label>
-                        <input
-                            type="file"
-                            name="foto"
-                            onChange={handleInputChange}
-                        />
-                        {cvData.foto && (
-                            <img
-                                src={URL.createObjectURL(cvData.foto)}
-                                alt="Foto"
-                                style={{ width: 100, height: 100, borderRadius: '50%' }}
-                            />
-                        )}
-                    </div>
-                    <div>
-                        <label>Nombre:</label>
-                        <input
-                            type="text"
-                            name="nombre"
-                            value={cvData.nombre}
-                            onChange={handleInputChange}
-                            placeholder='Nombre/Apellidos'
-                        />
-                    </div>
-                    <div>
-                        <label>Experiencia Laboral:</label>
-                        <input
-                            type="text"
-                            name="experienciaLaboral"
-                            value={cvData.experienciaLaboral}
-                            onChange={handleInputChange}
-                            placeholder='Experiencia laboral'
-                        />
-                    </div>
-                    <div>
-                        <label>Estudios:</label>
-                        <input
-                            type="text"
-                            name="estudios"
-                            value={cvData.estudios}
-                            onChange={handleInputChange}
-                            placeholder='Nivel de estudios (ingenieria, licenciatura, otros)'
-                        />
-                    </div>
-                    <div>
-                        <label>Habilidades y competencias profesionales:</label>
-                        <input
-                            type="text"
-                            name="habilidades"
-                            value={cvData.habilidades}
-                            onChange={handleInputChange}
-                            placeholder='Habilidades y competencias'
-                        />
-                    </div>
-                    <div>
-                        <label>Idiomas:</label>
-                        <input
-                            type="text"
-                            name="idiomas"
-                            value={cvData.idiomas}
-                            onChange={handleInputChange}
-                            placeholder='Idiomas'
-                        />
-                    </div>
-                    <div>
-                        <label>Sobre Mi:</label>
-                        <input
-                            type="text"
-                            name="sobreMi"
-                            value={cvData.sobreMi}
-                            onChange={handleInputChange}
-                            placeholder='Describete'
-                        />
-                    </div>
-                    <div>
-                        <label>Herramientas de software</label>
-                        <input
-                            type="text"
-                            name="herramientas"
-                            value={cvData.herramientas}
-                            onChange={handleInputChange}
-                            placeholder='Lenguajes, frameworks, etc.'
-                        />
-                    </div>
-                    <div>
-                        <label>Contacto:</label>
-                        <input
-                            type="text"
-                            name="contacto"
-                            value={cvData.contacto}
-                            onChange={handleInputChange}
-                            placeholder='Telefono'
-                        />
-                        <input
-                            type="text"
-                            name="correo"
-                            value={cvData.correo}
-                            onChange={handleInputChange}
-                            placeholder='Correo electronico'
-                        />
-                        <input
-                            type="text"
-                            name="direccion"
-                            value={cvData.direccion}
-                            onChange={handleInputChange}
-                            placeholder='Domicilio' />
-                    </div>
-                    <button onClick={generatePdf}>Generar PDF</button>
-                    <div>
-                        <button><Link to='/SubIndex'>Regresar</Link></button>
-                    </div>
-                </form>
-=======
             <div className="cv-details-container" >
                 <div className="cv-form">
                     <h2 className='titulo'>Edita tu CV</h2>
@@ -401,14 +243,9 @@ const Cvdetails = () => {
 
                 <Link to='/SubIndex'><button className="btn-back" >Volver</button></Link>
                 <button onClick={handleNext} className="next-button">Siguiente</button>
->>>>>>> 046c207eff653c7c9795c50573922c04314fcbf3
             </div>
         </>
     );
 };
 
-<<<<<<< HEAD
 export default Cvdetails;
-=======
-export default Cvdetails;
->>>>>>> 046c207eff653c7c9795c50573922c04314fcbf3

@@ -3,52 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import Imagen from '../Components/Imagen';
 import NavBar from '../Components/NavBar';
 import AppHeader from '../Components/AppHeader';
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 import '../Views/Styles/login.css'
 import { Link } from 'react-router-dom'
 
 const Login = () => {
-=======
-<<<<<<< HEAD
-import '../Views/Styles/login.css';
 
-const Login = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState(null);
-  const navigate = useNavigate();
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    if (!username || !password) {
-      setError('Por favor, llene todos los campos');
-      return;
-    }
-
-    try {
-      const response = await fetch(`http://localhost:8080/login1?username=${username}&password=${password}`);
-      const data = await response.json();
-      if (data.status === "Ok") {
-        navigate('/SubIndex');
-      } else {
-        setError('Credenciales incorrectas');
-      }
-    } catch (error) {
-      setError('Error al autenticar');
-    }
-  };
-=======
-import '../Views/Styles/login.css'
-import { Link } from 'react-router-dom';
->>>>>>> 046c207eff653c7c9795c50573922c04314fcbf3
-
->>>>>>> Frontend
-=======
-import '../Views/Styles/login.css'
-import { Link } from 'react-router-dom';
-
->>>>>>> Tester
   return (
     <>
       <AppHeader />
@@ -59,8 +19,7 @@ import { Link } from 'react-router-dom';
           <div className="form-custom">
             <form className="login-form-custom" method="get" onSubmit={handleSubmit}>
               <h2>Login</h2>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
               <input
                 type="text"
                 placeholder="Username"
@@ -76,16 +35,15 @@ import { Link } from 'react-router-dom';
                 onChange={(event) => setPassword(event.target.value)}
               />
               {error && <p style={{ color: 'red' }}>{error}</p>}
-=======
+
               <input type="text" placeholder="Username" required />
               <input type="password" placeholder="Password" required />
               <Link to='../SubIndex'>
->>>>>>> 046c207eff653c7c9795c50573922c04314fcbf3
-=======
+
               <input type="text" placeholder="Username" required />
               <input type="password" placeholder="Password" required />
               <Link to='../SubIndex'>
->>>>>>> Tester
+
               <button className="btn-custom1">
                 <span></span>
                 <span></span>
@@ -93,37 +51,24 @@ import { Link } from 'react-router-dom';
                 <span></span>
                 Sign in
               </button>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
               <p className="message-custom">
                 Not registered? <a href='Registro'>Create an account</a>
               </p>
-=======
+
               </Link>
               <p className="message-custom">Not registered? <a href='Registro'>Create an account</a></p>
->>>>>>> 046c207eff653c7c9795c50573922c04314fcbf3
-=======
+
               </Link>
               <p className="message-custom">Not registered? <a href='Registro'>Create an account</a></p>
->>>>>>> Tester
+
             </form>
           </div>
         </div>
       </div>
     </>
   );
-<<<<<<< HEAD
+
 };
 
 export default Login;
-
-<<<<<<< HEAD
-export default Login;
-=======
->>>>>>> Frontend
-=======
-
-
-export default Login;
-
->>>>>>> Tester

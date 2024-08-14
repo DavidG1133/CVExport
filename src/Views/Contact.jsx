@@ -5,11 +5,6 @@ import AppHeader from '../Components/AppHeader';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpenText, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import '../Views/Styles/contact.css'
-<<<<<<< HEAD
-import { Link } from 'react-router-dom'
-
-=======
->>>>>>> Frontend
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
