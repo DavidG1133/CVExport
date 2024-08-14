@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .cv-details {
     max-width: 800px;
     margin: 40px auto;
@@ -35,6 +36,34 @@
     color: #333;
     margin-bottom: 10px;
   }
+=======
+.cv-details-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px;
+    background-color: #5FCB9F;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.cv-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ancho aumentado para mejor legibilidad */
+    text-align: left;
+    margin-right: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cv-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+>>>>>>> 046c207eff653c7c9795c50573922c04314fcbf3
 
   .btn33{
     background-color: #cdd40d;
@@ -81,6 +110,7 @@
   .cv-details label {
     display: block;
     margin-bottom: 10px;
+<<<<<<< HEAD
   }
   
   .cv-details input, .cv-details textarea {
@@ -105,3 +135,201 @@
     background-color: #3e8e41;
   }
   
+=======
+    color: #555;
+}
+
+.cv-form input,
+.cv-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    resize: vertical; /* Permite el redimensionamiento vertical */
+}
+
+.cv-form input:focus,
+.cv-form textarea:focus {
+    border-color: #5FCB9F;
+}
+
+.cv-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cv-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ancho aumentado para mejor legibilidad */
+    text-align: left;
+    margin-right: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cv-section h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cv-section label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.cv-section input,
+.cv-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    resize: vertical; /* Permite el redimensionamiento vertical */
+}
+
+.cv-section input:focus,
+.cv-section textarea:focus {
+    border-color: #5FCB9F;
+}
+
+.cv-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cv-template-section {
+    background-color: #D6DDDB;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 100%; /* Ancho completo del contenedor padre */
+    max-width: 600px; /* Máximo ancho para evitar estiramiento excesivo */
+    height: auto; /* Altura automática */
+    overflow-y: auto; /* Desplazamiento vertical si es necesario */
+    box-sizing: border-box;
+    max-height: 80vh; /* Altura máxima para limitar el crecimiento vertical */
+}
+
+.cv-template-section .cv-details {
+    padding: 12px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 100%; /* Ancho completo del contenedor padre */
+    height: auto; /* Altura automática */
+    box-sizing: border-box;
+}
+
+.cv-template-section .cv-details textarea,
+.cv-template-section .cv-details input {
+    width: calc(100% - 24px); /* Ajustar el ancho para evitar el desbordamiento horizontal */
+    padding: 8px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical; /* Permitir la redimensión vertical de los textarea */
+    font-family: 'Arial', sans-serif;
+    white-space: wrap; /* Permitir el cambio de línea al mantener presionada una tecla */
+}
+
+.cv-template-section .cv-details,
+.cv-template-section .cv-details {
+    padding: 8px 15px;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+}
+.cv-template-container {
+    background-color: #D6DDDB;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 220px; /* Tamaño uniforme para todos los CVs */
+    max-width: 100%; /* Evitar que se expanda horizontalmente */
+    height: auto; /* Permitir que el contenedor se ajuste según el contenido */
+    box-sizing: border-box;
+    overflow: hidden; /* Ocultar contenido desbordado */
+}
+
+.cv-template-container .cv-details {
+    padding: 12px;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    font-family: 'Arial', sans-serif;
+    white-space: pre-wrap; /* Permitir cambio de línea */
+}
+
+.btn-add,
+.btn-remove {
+    padding: 8px 15px;
+    background-color: #5FCB9F;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add:hover,
+.btn-remove:hover {
+    background-color: #4CA588;
+}
+.next-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.next-button:hover {
+    background-color: #0056b3;
+}
+
+
+.btn-back {
+    padding: 10px 20px;
+    background-color: #DDE543;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 450px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #4CA588;
+}
+>>>>>>> 046c207eff653c7c9795c50573922c04314fcbf3
