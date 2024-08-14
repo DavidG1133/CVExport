@@ -86,7 +86,7 @@ const Registro = () => {
                 <span></span>
                 <span></span>
                 Create
-              </a>
+              </button>
               <p className="message">
                 Already registered? <a href="Login">Sign In</a>
               </p>
