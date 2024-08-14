@@ -53,7 +53,7 @@ GESTIÓN DE CVS
 - GitLends- GitKraken
 - ES7 +React/Redux/React-Native  Snippets-- dsznajder
 
-#Instalaciones de librerias 
+# Instalaciones de librerias 
 
 - npm install @fortawesome/fontawesome-free@6.6.0
 - npm install @fortawesome/free-solid-svg-icons@6.6.0
@@ -74,18 +74,18 @@ GESTIÓN DE CVS
 - npm install --save-dev eslint-plugin-react-hooks@4.6.0
 - npm install --save-dev jest-fetch-mock@3.0.3
 
-#Base de datos 
+# Base de datos 
 
-create database usuarios2;
-use usuarios2;
-
-create table users(
-id int primary key auto_increment,
-nombre varchar(100),
-username varchar(100) ,
-email varchar(255) ,
-contra varchar(255)
-);
+      create database usuarios2;
+      use usuarios2;
+      
+      create table users(
+      id int primary key auto_increment,
+      nombre varchar(100),
+      username varchar(100) ,
+      email varchar(255) ,
+      contra varchar(255)
+      );
 
 
 # Mockups
