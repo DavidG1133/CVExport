@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import CvTemplate from '../Components/CvTemplate';
-import cvTemplates from '../ViewModels/cvTemplates';
 import '../Views/Styles/cvdetails.css';
 import Nav2 from '../Components/Nav2';
 import { Link } from 'react-router-dom';

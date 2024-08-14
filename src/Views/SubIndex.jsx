@@ -1,12 +1,9 @@
 
-import React from 'react'
-import { Link } from 'react-router-dom'
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Alert from '../Components/Alert'
 import Nav2 from '../Components/Nav2';
 import CvTemplate from '../Components/CvTemplate';
-import cvTemplates from '../ViewModels/cvTemplates';
 import '../Views/Styles/subindex.css';
 
 const SubIndex = () => {
