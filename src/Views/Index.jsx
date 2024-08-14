@@ -31,11 +31,7 @@ const Index = () => {
               </div>
             </div>
             <div className='card-footer'>
-<<<<<<< HEAD
               <button className='btn'> <Link className='textocolor' to='/Login'>DESCÚBRELO</Link></button>
-=======
-              <button className='btn'> <Link className='textocolor' to='/SubIndex'>DESCÚBRELO</Link></button>
->>>>>>> 046c207eff653c7c9795c50573922c04314fcbf3
             </div>
           </div>
         </div>

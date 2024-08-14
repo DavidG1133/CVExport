@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import Imagen from '../Components/Imagen';
 import NavBar from '../Components/NavBar';
 import AppHeader from '../Components/AppHeader';
-<<<<<<< HEAD
 import '../Views/Styles/login.css';
 
 const Login = () => {
@@ -31,10 +30,6 @@ const Login = () => {
       setError('Error al autenticar');
     }
   };
-=======
-import '../Views/Styles/login.css'
-import { Link } from 'react-router-dom';
->>>>>>> 046c207eff653c7c9795c50573922c04314fcbf3
 
   return (
     <>
@@ -46,7 +41,6 @@ import { Link } from 'react-router-dom';
           <div className="form-custom">
             <form className="login-form-custom" method="get" onSubmit={handleSubmit}>
               <h2>Login</h2>
-<<<<<<< HEAD
               <input
                 type="text"
                 placeholder="Username"
@@ -62,11 +56,6 @@ import { Link } from 'react-router-dom';
                 onChange={(event) => setPassword(event.target.value)}
               />
               {error && <p style={{ color: 'red' }}>{error}</p>}
-=======
-              <input type="text" placeholder="Username" required />
-              <input type="password" placeholder="Password" required />
-              <Link to='../SubIndex'>
->>>>>>> 046c207eff653c7c9795c50573922c04314fcbf3
               <button className="btn-custom1">
                 <span></span>
                 <span></span>
@@ -74,14 +63,9 @@ import { Link } from 'react-router-dom';
                 <span></span>
                 Sign in
               </button>
-<<<<<<< HEAD
               <p className="message-custom">
                 Not registered? <a href='Registro'>Create an account</a>
               </p>
-=======
-              </Link>
-              <p className="message-custom">Not registered? <a href='Registro'>Create an account</a></p>
->>>>>>> 046c207eff653c7c9795c50573922c04314fcbf3
             </form>
           </div>
         </div>
