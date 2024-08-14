@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<div>
+  <nav
+    class="navbar2 navbar-expand navbar-dark bg-dark"
+  >
+    <div
+      class="container-fluid"
+    >
+      <header>
+        <img
+          alt="Logo"
+          class="logo-image"
+          src="[object Object]"
+          style="position: absolute; top: 20px; left: 50px; width: auto; height: auto; max-width: 100%; max-height: 20%;"
+        />
+      </header>
+      <div
+        class="navbar-nav ml-auto"
+      >
+        <div
+          class="icons"
+        >
+          <a
+            class="nav-link"
+            href="/"
+          >
+            <svg
+              aria-labelledby="svg-inline--fa-title-8zdB9ITEokTy"
+              class="svg-inline--fa fa-arrow-right fa-icon"
+              data-icon="arrow-right"
+              data-prefix="fas"
+              role="img"
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title
+                id="svg-inline--fa-title-8zdB9ITEokTy"
+              >
+                Salir
+              </title>
+              <path
+                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div
+    class="cv-details"
+  >
+    <h1>
+      Detalles del CV
+    </h1>
+    <form>
+      <div>
+        <label>
+          Foto:
+        </label>
+        <input
+          name="foto"
+          type="file"
+        />
+      </div>
+      <div>
+        <label>
+          Nombre:
+        </label>
+        <input
+          name="nombre"
+          placeholder="Nombre/Apellidos"
+          type="text"
+          value=""
+        />
+      </div>
+      <div>
+        <label>
+          Experiencia Laboral:
+        </label>
+        <input
+          name="experienciaLaboral"
+          placeholder="Experiencia laboral"
+          type="text"
+          value=""
+        />
+      </div>
+      <div>
+        <label>
+          Estudios:
+        </label>
+        <input
+          name="estudios"
+          placeholder="Nivel de estudios (ingenieria, licenciatura, otros)"
+          type="text"
+          value=""
+        />
+      </div>
+      <div>
+        <label>
+          Habilidades y competencias profesionales:
+        </label>
+        <input
+          name="habilidades"
+          placeholder="Habilidades y competencias"
+          type="text"
+          value=""
+        />
+      </div>
+      <div>
+        <label>
+          Idiomas:
+        </label>
+        <input
+          name="idiomas"
+          placeholder="Idiomas"
+          type="text"
+          value=""
+        />
+      </div>
+      <div>
+        <label>
+          Sobre Mi:
+        </label>
+        <input
+          name="sobreMi"
+          placeholder="Describete"
+          type="text"
+          value=""
+        />
+      </div>
+      <div>
+        <label>
+          Herramientas de software
+        </label>
+        <input
+          name="herramientas"
+          placeholder="Lenguajes, frameworks, etc."
+          type="text"
+          value=""
+        />
+      </div>
+      <div>
+        <label>
+          Contacto:
+        </label>
+        <input
+          name="contacto"
+          placeholder="Telefono"
+          type="text"
+          value=""
+        />
+        <input
+          name="correo"
+          placeholder="Correo electronico"
+          type="text"
+          value=""
+        />
+        <input
+          name="direccion"
+          placeholder="Domicilio"
+          type="text"
+          value=""
+        />
+      </div>
+      <button>
+        Generar PDF
+      </button>
+      <div>
+        <button>
+          <a
+            href="/SubIndex"
+          >
+            Regresar
+          </a>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

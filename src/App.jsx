@@ -1,8 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Mainrutes from './ViewModels/Mainrutes'
+import MainRutes from './ViewModels/MainRutes'
 import { BrowserRouter } from 'react-router-dom'
 
 function App() {
@@ -11,7 +9,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Mainrutes/>
+        <MainRutes/>
       </BrowserRouter>
     </>
   )

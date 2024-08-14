@@ -1,7 +1,14 @@
-// src/components/Logo.jsx
 import React from 'react';
 import PropTypes from 'prop-types';
+<<<<<<< HEAD
 import '../Views/Styles/logo.css'; // Importa el archivo CSS
+=======
+<<<<<<< HEAD
+import '../Views/Styles/logo.css';
+=======
+import '../Views/Styles/logo.css'; // Importa el archivo CSS
+>>>>>>> 046c207eff653c7c9795c50573922c04314fcbf3
+>>>>>>> Frontend
 
 const Logo = ({ src, alt, position }) => {
   const logoStyle = {

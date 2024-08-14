@@ -5,8 +5,11 @@ import AppHeader from '../Components/AppHeader';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpenText, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import '../Views/Styles/contact.css'
+<<<<<<< HEAD
 import { Link } from 'react-router-dom'
 
+=======
+>>>>>>> Frontend
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -44,7 +47,7 @@ const Contact = () => {
                 <div className='contact-form-container'>
                     <form onSubmit={handleSubmit} className='contact-form'>
                         <div>
-                            <label htmlFor="name">Nombre:</label><br />
+                            <label htmlFor="name" className='lb'>Nombre:</label><br />
                             <input
                                 type="text"
                                 id="name"
@@ -56,7 +59,7 @@ const Contact = () => {
                             />
                         </div>
                         <div>
-                            <label htmlFor="email">Correo:</label><br />
+                            <label htmlFor="email" className='lb'>Correo:</label><br />
                             <input
                                 type="email"
                                 id="email"
@@ -68,7 +71,7 @@ const Contact = () => {
                             />
                         </div>
                         <div>
-                            <label htmlFor="comment">Comentario:</label><br />
+                            <label htmlFor="comment" className='lb'>Comentario:</label><br />
                             <textarea
                                 id="comment"
                                 name="comment"

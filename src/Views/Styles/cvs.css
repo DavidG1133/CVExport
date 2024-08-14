@@ -1,0 +1,57 @@
+.cv-template-container2 {
+    background-color: #D6DDDB;
+    padding: 100px;
+    margin: 150px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+<<<<<<< HEAD
+    width: 900px; /* Aumenté el ancho para que se vea mejor */
+    height: 1000px; /* Aumenté el alto para que se vea mejor */
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .cv-template-container2 h2, .cv-template-container2 h3 {
+    margin: 20px 1px; /* Aumenté el margen para que se vea mejor */
+    color: black;
+    font-weight: bold; /* Agregué negrita para que se vea mejor */
+  }
+  
+  .cv-template-container2 h4 {
+    margin-top: 10px; /* Aumenté el margen para que se vea mejor */
+  }
+  
+  .left-side {
+    float: left;
+    padding: 20px; /* Agregué padding para que se vea mejor */
+  }
+  
+  .right-side {
+    float: right;
+    width: 40%; /* Aumenté el ancho para que se vea mejor */
+    padding: 10px; /* Agregué padding para que se vea mejor */
+  }
+  
+  .perfil {
+    width: 120px; /* Aumenté el ancho para que se vea mejor */
+    height: 120px; /* Aumenté el alto para que se vea mejor */
+    border-radius: 50%;
+    margin: 15px; /* Aumenté el margen para que se vea mejor */
+  }
+=======
+    width: 220px; /* Tamaño uniforme para todos los CVs */
+    height: 300px; /* Altura fija */
+    box-sizing: border-box;
+    overflow: hidden; /* Oculta el contenido desbordado */
+}
+
+.cv-template-container2 h2, .cv-template-container2 h3, .cv-template-container2  {
+    margin: 10px 0;
+    color:black;
+}
+
+.cv-template-container2 h4 {
+    margin-top: 10px;
+}
+>>>>>>> 046c207eff653c7c9795c50573922c04314fcbf3
