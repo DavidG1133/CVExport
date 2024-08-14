@@ -4,6 +4,7 @@ import Imagen from '../Components/Imagen';
 import NavBar from '../Components/NavBar';
 import AppHeader from '../Components/AppHeader';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import '../Views/Styles/login.css'
 import { Link } from 'react-router-dom'
 
@@ -43,6 +44,11 @@ import { Link } from 'react-router-dom';
 >>>>>>> 046c207eff653c7c9795c50573922c04314fcbf3
 
 >>>>>>> Frontend
+=======
+import '../Views/Styles/login.css'
+import { Link } from 'react-router-dom';
+
+>>>>>>> Tester
   return (
     <>
       <AppHeader />
@@ -53,6 +59,7 @@ import { Link } from 'react-router-dom';
           <div className="form-custom">
             <form className="login-form-custom" method="get" onSubmit={handleSubmit}>
               <h2>Login</h2>
+<<<<<<< HEAD
 <<<<<<< HEAD
               <input
                 type="text"
@@ -74,6 +81,11 @@ import { Link } from 'react-router-dom';
               <input type="password" placeholder="Password" required />
               <Link to='../SubIndex'>
 >>>>>>> 046c207eff653c7c9795c50573922c04314fcbf3
+=======
+              <input type="text" placeholder="Username" required />
+              <input type="password" placeholder="Password" required />
+              <Link to='../SubIndex'>
+>>>>>>> Tester
               <button className="btn-custom1">
                 <span></span>
                 <span></span>
@@ -82,6 +94,7 @@ import { Link } from 'react-router-dom';
                 Sign in
               </button>
 <<<<<<< HEAD
+<<<<<<< HEAD
               <p className="message-custom">
                 Not registered? <a href='Registro'>Create an account</a>
               </p>
@@ -89,12 +102,17 @@ import { Link } from 'react-router-dom';
               </Link>
               <p className="message-custom">Not registered? <a href='Registro'>Create an account</a></p>
 >>>>>>> 046c207eff653c7c9795c50573922c04314fcbf3
+=======
+              </Link>
+              <p className="message-custom">Not registered? <a href='Registro'>Create an account</a></p>
+>>>>>>> Tester
             </form>
           </div>
         </div>
       </div>
     </>
   );
+<<<<<<< HEAD
 };
 
 export default Login;
@@ -103,3 +121,9 @@ export default Login;
 export default Login;
 =======
 >>>>>>> Frontend
+=======
+
+
+export default Login;
+
+>>>>>>> Tester
