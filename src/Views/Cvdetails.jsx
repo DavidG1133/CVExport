@@ -1,85 +1,39 @@
-import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import CvTemplate from '../Components/CvTemplate';
-import '../Views/Styles/cvdetails.css';
+import React, { useState } from 'react';
 import Nav2 from '../Components/Nav2';
-import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-
+import { Link, useParams } from 'react-router-dom';
+import '../Views/Styles/cvdetails.css';
+import jsPDF from 'jspdf';
 
 const Cvdetails = () => {
-    const { id } = useParams();
+    const {id} = useParams()
     const [cvData, setCvData] = useState({
-        name: '',
-        title: '',
-        summary: '',
-        experience: [],
-        education: []
+        nombre: '',
+        experienciaLaboral: '',
+        estudios: '',
+        habilidades: '',
+        idiomas: '',
+        sobreMi: '',
+        contacto: '',
+        herramientas: '',
+        correo: '',
+        direccion: '',
+        foto: null,
     });
 
-    const navigate = useNavigate();
-
-    const handleNext = () => {
-        navigate('/preview', { state: { cvData } });
-    };
-
-    
-
-    useEffect(() => {
-        const template = cvTemplates.find(t => t.id === parseInt(id));
-        if (template) {
-            setCvData(template);
+    const handleInputChange = (event) => {
+        const { name, value } = event.target;
+        if (name === 'foto') {
+            setCvData((prevData) => ({ ...prevData, foto: event.target.files[0] }));
+        } else {
+            setCvData((prevData) => ({ ...prevData, [name]: value }));
         }
-    }, [id]);
-
-    const handleChange = (e, index, type) => {
-        const { name, value } = e.target;
-        setCvData(prevState => ({
-            ...prevState,
-            [type]: prevState[type].map((item, i) => i === index ? { ...item, [name]: value } : item)
-        }));
     };
 
-    const handleChange2 = (e, name) => {
-        const { value } = e.target;
-        setCvData(prevState => ({
-            ...prevState,
-            [name]: value
-        }));
-    };
-
-
-    const addField = (type) => {
-        const newItem = {
-            id: Date.now(),
-            role: '',
-            company: '',
-            description: ''
-        };
-
-        const cleanNewItem = {
-            id: newItem.id,
-            role: newItem.role,
-            company: newItem.company,
-            description: newItem.description
-        };
-
-        setCvData(prevState => ({
-            ...prevState,
-            [type]: [...prevState[type], cleanNewItem]
-        }));
-    };
-
-
-    const removeField = (index, type) => {
-        setCvData(prevState => ({
-            ...prevState,
-            [type]: prevState[type].filter((item, i) => i !== index)
-        }));
-    };
-
-    if (!cvData) {
-        return <div>Loading...</div>;
+    const colors ={
+        1:[200,205,207],
+        2:[219,223,224],
+        3:[247,11,239],
+        4:[247,148,148]
     }
 
     const generatePdf = () => {
@@ -147,101 +101,123 @@ const Cvdetails = () => {
     return (
         <>
             <Nav2 />
-            <div className="cv-details-container" >
-                <div className="cv-form">
-                    <h2 className='titulo'>Edita tu CV</h2>
-                    <label>
-                        Nombre:
-                        <input type="text" name="name" value={cvData.name} onChange={(e) => handleChange2(e, 'name', 'cvData')} />
-                    </label>
-                    <label>
-                        Titulo:
-                        <input type="text" name="title" value={cvData.title} onChange={(e) => handleChange2(e, 'title', 'cvData')} />
-                    </label>
-                    <label>
-                        Descripcion:
-                        <textarea name="summary" value={cvData.summary} onChange={(e) => handleChange2(e, 'summary', 'cvData')} />
-                    </label>
-                </div>
-
-                <div className="cv-section">
-                    <h4>Experiencia laboral</h4>
-                    {cvData.experience && cvData.experience.map((item, index) => (
-                        <div className="cv-field" key={item.id}>
-                            <label>
-                                Rol:
-                                <input
-                                    type="text"
-                                    name="role"
-                                    value={item.role}
-                                    onChange={(e) => handleChange(e, index, 'experience')}
-                                />
-                            </label>
-                            <label>
-                                Compañias:
-                                <input
-                                    type="text"
-                                    name="company"
-                                    value={item.company}
-                                    onChange={(e) => handleChange(e, index, 'experience')}
-                                />
-                            </label>
-                            <label>
-                                Descripcion:
-                                <textarea
-                                    name="description"
-                                    value={item.description}
-                                    onChange={(e) => handleChange(e, index, 'experience')}
-                                />
-                            </label>
-                            <button className="btn-remove" onClick={() => removeField(index, 'experience')}>Eliminar</button>
-                        </div>
-                    ))}
-                    <button className="btn-add" onClick={() => addField('experience')}>Agregar campo</button>
-                </div>
-
-                <div className="cv-section">
-                    <h4>Educacion</h4>
-                    {cvData.education && cvData.education.map((item, index) => (
-                        <div className="cv-field" key={item.id}>
-                            <label>
-                                Grado:
-                                <input
-                                    type="text"
-                                    name="degree"
-                                    value={item.degree}
-                                    onChange={(e) => handleChange(e, index, 'education')}
-                                />
-                            </label>
-                            <label>
-                                Inf. escolar:
-                                <input
-                                    type="text"
-                                    name="school"
-                                    value={item.school}
-                                    onChange={(e) => handleChange(e, index, 'education')}
-                                />
-                            </label>
-                            <label>
-                                Descripcion:
-                                <textarea
-                                    name="description"
-                                    value={item.description}
-                                    onChange={(e) => handleChange(e, index, 'education')}
-                                />
-                            </label>
-                            <button className="btn-remove" onClick={() => removeField(index, 'education')}>Eliminar</button>
-                        </div>
-                    ))}
-                    <button className="btn-add" onClick={() => addField('education')}>Agregar campo</button>
-                </div>
-
-                <div className="cv-template-section">
-                    <CvTemplate {...cvData} className="cv-details" />
-                </div>
-
-                <Link to='/SubIndex'><button className="btn-back" >Volver</button></Link>
-                <button onClick={handleNext} className="next-button">Siguiente</button>
+            <div className="cv-details">
+                <h1>Detalles del CV</h1>
+                <form>
+                    
+                    <div>
+                        <label>Foto:</label>
+                        <input
+                            type="file"
+                            name="foto"
+                            onChange={handleInputChange}
+                        />
+                        {cvData.foto && (
+                            <img
+                                src={URL.createObjectURL(cvData.foto)}
+                                alt="Foto"
+                                style={{ width: 100, height: 100, borderRadius: '50%' }}
+                            />
+                        )}
+                    </div>
+                    <div>
+                        <label>Nombre:</label>
+                        <input
+                            type="text"
+                            name="nombre"
+                            value={cvData.nombre}
+                            onChange={handleInputChange}
+                            placeholder='Nombre/Apellidos'
+                        />
+                    </div>
+                    <div>
+                        <label>Experiencia Laboral:</label>
+                        <input
+                            type="text"
+                            name="experienciaLaboral"
+                            value={cvData.experienciaLaboral}
+                            onChange={handleInputChange}
+                            placeholder='Experiencia laboral'
+                        />
+                    </div>
+                    <div>
+                        <label>Estudios:</label>
+                        <input
+                            type="text"
+                            name="estudios"
+                            value={cvData.estudios}
+                            onChange={handleInputChange}
+                            placeholder='Nivel de estudios (ingenieria, licenciatura, otros)'
+                        />
+                    </div>
+                    <div>
+                        <label>Habilidades y competencias profesionales:</label>
+                        <input
+                            type="text"
+                            name="habilidades"
+                            value={cvData.habilidades}
+                            onChange={handleInputChange}
+                            placeholder='Habilidades y competencias'
+                        />
+                    </div>
+                    <div>
+                        <label>Idiomas:</label>
+                        <input
+                            type="text"
+                            name="idiomas"
+                            value={cvData.idiomas}
+                            onChange={handleInputChange}
+                            placeholder='Idiomas'
+                        />
+                    </div>
+                    <div>
+                        <label>Sobre Mi:</label>
+                        <input
+                            type="text"
+                            name="sobreMi"
+                            value={cvData.sobreMi}
+                            onChange={handleInputChange}
+                            placeholder='Describete'
+                        />
+                    </div>
+                    <div>
+                        <label>Herramientas de software</label>
+                        <input
+                            type="text"
+                            name="herramientas"
+                            value={cvData.herramientas}
+                            onChange={handleInputChange}
+                            placeholder='Lenguajes, frameworks, etc.'
+                        />
+                    </div>
+                    <div>
+                        <label>Contacto:</label>
+                        <input
+                            type="text"
+                            name="contacto"
+                            value={cvData.contacto}
+                            onChange={handleInputChange}
+                            placeholder='Telefono'
+                        />
+                        <input
+                            type="text"
+                            name="correo"
+                            value={cvData.correo}
+                            onChange={handleInputChange}
+                            placeholder='Correo electronico'
+                        />
+                        <input
+                            type="text"
+                            name="direccion"
+                            value={cvData.direccion}
+                            onChange={handleInputChange}
+                            placeholder='Domicilio' />
+                    </div>
+                    <button onClick={generatePdf}>Generar PDF</button>
+                    <div>
+                        <button><Link to='/SubIndex'>Regresar</Link></button>
+                    </div>
+                </form>
             </div>
         </>
     );

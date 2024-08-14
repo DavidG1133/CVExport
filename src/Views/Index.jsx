@@ -31,7 +31,7 @@ const Index = () => {
               </div>
             </div>
             <div className='card-footer'>
-              <button className='btn'> <Link className='textocolor' to='/SubIndex'>DESCÚBRELO</Link></button>
+              <button className='btn'> <Link className='textocolor' to='/Login'>DESCÚBRELO</Link></button>
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@ import '../Views/Styles/logo.css';
 
 import '../Views/Styles/logo.css'; // Importa el archivo CSS
 
+import '../Views/Styles/logo.css';
 
 const Logo = ({ src, alt, position }) => {
   const logoStyle = {

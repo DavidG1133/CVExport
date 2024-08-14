@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import AppHeader from '../Components/AppHeader';
 import NavBar from '../Components/NavBar';
 import Imagen from '../Components/Imagen';
-
-import '../Views/Styles/registro.css'
-import { Link } from 'react-router-dom'
+import '../Views/Styles/registro.css';
+import Swal from 'sweetalert2';
 
 const Registro = () => {
   const [nombre, setNombre] = useState('');
@@ -53,11 +52,35 @@ const Registro = () => {
           <div className="form1">
             <form className="register-form1" method="POST" onSubmit={handleSubmit}>
               <h2>Registrate</h2>
-              <input type="text" placeholder="Full Name *" required />
-              <input type="text" placeholder="Username *" required />
-              <input type="email" placeholder="Email *" required />
-              <input type="password" placeholder="Password *" required />
-              <a className="btn3" href="Login">
+              <input
+                type="text"
+                placeholder="Full Name *"
+                required
+                value={nombre}
+                onChange={(event) => setNombre(event.target.value)}
+              />
+              <input
+                type="text"
+                placeholder="Username *"
+                required
+                value={username}
+                onChange={(event) => setUsername(event.target.value)}
+              />
+              <input
+                type="email"
+                placeholder="Email *"
+                required
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+              />
+              <input
+                type="password"
+                placeholder="Password *"
+                required
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}
+              />
+              <button className="btn-custom1">
                 <span></span>
                 <span></span>
                 <span></span>

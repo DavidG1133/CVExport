@@ -13,9 +13,13 @@ const Nav2 = () => {
                     <AppHeader />
                     <div className="navbar-nav ml-auto" >
                         <div className="icons">
+<<<<<<< HEAD
+                            
+=======
                             <Link to="/History" className="navbar-brand">
                                 <FontAwesomeIcon icon={faUser} className="fa-icon"  title='Historial'/>
                             </Link>
+>>>>>>> 046c207eff653c7c9795c50573922c04314fcbf3
                             <Link to="/" className="nav-link">
                                 <FontAwesomeIcon icon={faArrowRight} className="fa-icon" title='Salir'/>
                             </Link>
