@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import MainRutes from './ViewModels/MainRutes'
 import { BrowserRouter } from 'react-router-dom'
+import MainRoutes from './ViewModels/Mainrutes'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <MainRutes/>
+        <MainRoutes/>
       </BrowserRouter>
     </>
   )
