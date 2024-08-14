@@ -188,6 +188,9 @@ La arquitectura MVVM es una excelente opción para el desarrollo del proyecto de
 # Prueba componente
 ![Untitled-1](https://github.com/user-attachments/assets/412cf848-6b5a-40a3-97da-00a5ec63488e)
 
+# Guía de Usuario para CVExport
+
+https://drive.google.com/file/d/1AgSynwGqvj9nWG7B1nwQveoNkHKuMryv/view?usp=sharing
 
 # Integrantes del Equipo
 - Daniela Alvarado Luna 
