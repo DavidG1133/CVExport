@@ -1,4 +1,4 @@
-.subindex-container {
+.subindex-container1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,28 +9,84 @@
     text-align: center;
 }
 
-.subindex-container h1 {
+.subindex-container1 h1 {
     margin-bottom: 20px; 
     text-align:center;
 }
 
 .text{
     text-align:center;
+    font-size:22px;
 }
 
-.cv-templates {
+.cv-templates1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
+    padding: 20px;
     margin-top: 20px;
 }
 
-.cv-template {
-    background-color: #E8ECEB;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 270px;
-    text-align: left;
+.cv-template1{
+    width:250px;
+    margin:20px;
+    padding:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
+
+.cv-template1 h2, .cv-template1 p {
+    margin: 10px 0; 
+    font-size: 18px; 
+    word-wrap: break-word; 
+    color:black;
+}
+
+.cv-container1:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out; 
+}
+
+.edit-button{
+    background-color: #cdd40d;
+  padding: 10px 20px;
+  border-radius: 45px;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  font-family: "Reddit Sans Condensed", sans-serif;
+}
+
+.cv-template1:hover {
+    transform: scale(1.05); 
+}
+
+.cv-container1 a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+}
+
+@media (max-width:768px){
+    .cv-templates1{
+        flex-direction:column;
+        align-items:center;
+    }
+    .cv-template1{
+        width:90%;
+    }
+}
+
+@media(max-width:480px){
+    .cv-template1{
+        padding:10px;
+    }
+    .cv-template1 h2, .cv-template p{
+        font-size:16px;
+    }
+}
+

@@ -53,7 +53,7 @@ h2 {
   display: none;
 }
 
-.btn-custom {
+.btn-custom1 {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -64,9 +64,11 @@ h2 {
   transition: .5s;
   margin-top: 15px;
   letter-spacing: 2px;
+  background:transparent;
+  border:none;
 }
 
-.btn-custom:hover {
+.btn-custom1:hover {
   background: #289bb8;
   color: #fff;
   border-radius: 5px;
@@ -76,12 +78,12 @@ h2 {
               0 0 100px #289bb8;
 }
 
-.btn-custom span {
+.btn-custom1 span {
   position: absolute;
   display: block;
 }
 
-.btn-custom span:nth-child(1) {
+.btn-custom1 span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -99,7 +101,7 @@ h2 {
   }
 }
 
-.btn-custom span:nth-child(2) {
+.btn-custom1 span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
@@ -118,7 +120,7 @@ h2 {
   }
 }
 
-.btn-custom span:nth-child(3) {
+.btn-custom1 span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -137,7 +139,7 @@ h2 {
   }
 }
 
-.btn-custom span:nth-child(4) {
+.btn-custom1 span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;

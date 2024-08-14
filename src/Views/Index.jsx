@@ -1,9 +1,10 @@
 import React from 'react'
-import '../Styles/styleI.css'
+import '../Views/Styles/styleI.css'
 import fondo from '../assets/fondo3.jpeg'
 import Imagen from '../Components/Imagen'
 import NavBar from '../Components/NavBar'
 import AppHeader from '../Components/AppHeader'
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   return (
@@ -30,7 +31,7 @@ const Index = () => {
               </div>
             </div>
             <div className='card-footer'>
-              <button className='btn'> <a className='textocolor' href='#'>DESCÚBRELO</a></button>
+              <button className='btn'> <Link className='textocolor' to='/Login'>DESCÚBRELO</Link></button>
             </div>
           </div>
         </div>
