@@ -34,7 +34,8 @@ GESTIÓN DE CVS
 - [React](https://react.dev/) 
 - [Fast API](https://fastapi.tiangolo.com/)
 - [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/download/)
-  
+
+
 ## Base de datos 
 - MySQL
 
@@ -51,6 +52,40 @@ GESTIÓN DE CVS
 - Git Hub Pull Request- GitHub
 - GitLends- GitKraken
 - ES7 +React/Redux/React-Native  Snippets-- dsznajder
+
+#Instalaciones de librerias 
+
+npm install @fortawesome/fontawesome-free@6.6.0
+npm install @fortawesome/free-solid-svg-icons@6.6.0
+npm install @fortawesome/react-fontawesome@0.2.2
+npm install @react-pdf/renderer@3.4.4
+npm install file-saver@2.0.5
+npm install iframe@1.0.0
+npm install jspdf@2.5.1
+npm install jspdf-autotable@3.8.2
+npm install pdf-lib@1.17.1
+npm install pdfjs@2.5.3
+npm install react-iframe@1.8.5
+npm install react-pdf@9.1.0
+npm install react-pdf-editor@1.1.2
+npm install sweetalert2@11.12.2
+npm install --save-dev @testing-library/react@16.0.0
+npm install --save-dev eslint-plugin-react@7.34.1
+npm install --save-dev eslint-plugin-react-hooks@4.6.0
+npm install --save-dev jest-fetch-mock@3.0.3
+
+#Base de datos 
+
+create database usuarios2;
+use usuarios2;
+
+create table users(
+id int primary key auto_increment,
+nombre varchar(100),
+username varchar(100) ,
+email varchar(255) ,
+contra varchar(255)
+);
 
 
 # Mockups
@@ -143,6 +178,11 @@ Total: 8 semanas
 # ARQUITECTURA APLICADA Y PATRÓN DE DISEÑO
 ## MVVM
 La arquitectura MVVM es una excelente opción para el desarrollo del proyecto de creación de CVs debido a su capacidad para manejar la complejidad de la lógica de presentación, su modularidad, y la separación de responsabilidades. Esto resulta en un código más limpio, mantenible y escalable, lo que es crucial para el éxito a largo plazo del proyecto. Además, MVVM facilita la implementación de funcionalidades complejas y actualizaciones en tiempo real.
+
+#Pruebas unitarias 
+![image](https://github.com/user-attachments/assets/f6e1f58a-0987-4260-9bb6-e0ee96c9c09f)
+
+
 
 # Integrantes del Equipo
 - Daniela Alvarado Luna 
