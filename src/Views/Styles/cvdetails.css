@@ -1,0 +1,107 @@
+.cv-details {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #5FCB9F;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .btndiv{
+    background-color: #cdd40d;
+    padding: 10px 20px;
+    border-radius: 45px;
+    border: none;
+    cursor: pointer;
+    color: dark;
+    font-family: "Reddit Sans Condensed", sans-serif;
+  }
+
+  .form3 {
+    width: 60%;
+    padding: 20px;
+    background-color: #b5b9ba ;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .field2 {
+    margin-bottom: 20px;
+  }
+  
+  .label1 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .btn33{
+    background-color: #cdd40d;
+    padding: 10px 20px;
+    border-radius: 45px;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    font-family: "Reddit Sans Condensed", sans-serif;
+  }
+  
+  .input2 {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .textarea2 {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100px;
+  }
+  
+  .cv-details {
+    font-family: Arial, sans-serif;
+  }
+  
+  .cv-details h1 {
+    text-align: center;
+  }
+  
+  .cv-details form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cv-details label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .cv-details input, .cv-details textarea {
+    width: 90%;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .cv-details button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cv-details button:hover {
+    background-color: #3e8e41;
+  }
+  

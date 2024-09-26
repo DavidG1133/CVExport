@@ -74,7 +74,8 @@ GESTIÓN DE CVS
 - npm install --save-dev eslint-plugin-react-hooks@4.6.0
 - npm install --save-dev jest-fetch-mock@3.0.3
 
-# Base de datos 
+# Base de datos
+Se debe ejecutar el main.py en el ambiente virtual
 
       create database usuarios2;
       use usuarios2;
